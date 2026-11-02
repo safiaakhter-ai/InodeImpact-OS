@@ -1,0 +1,6 @@
+{
+  "name": "Atlas Operations",
+  "theme": "northern-light",
+  "version": "1.0",
+  "report_template": "reports/template.md"
+}

@@ -1,0 +1,13 @@
+[project]
+name = "inodeimpact-os"
+version = "1.1.0"
+description = "Local-first predictive file-system dependency and operation impact analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "InodeImpact OS contributors"}]
+keywords = ["operating-systems", "inode", "filesystem", "dependency-graph", "impact-analysis"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

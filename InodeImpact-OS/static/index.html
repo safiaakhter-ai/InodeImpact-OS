@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080e1b">
+  <title>InodeImpact OS — Dependency Intelligence</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark"><span>i</span><span class="mark-dot"></span></div><div><strong>InodeImpact<span class="brand-os"> OS</span></strong><small>FILE SYSTEM INTELLIGENCE</small></div></div>
+    <div class="workspace-label">WORKSPACE</div>
+    <nav class="navigation" aria-label="Main navigation">
+      <button class="nav-item active" data-page="overview"><span class="nav-icon">◫</span> Overview <span class="nav-arrow">↗</span></button>
+      <button class="nav-item" data-page="explorer"><span class="nav-icon">▤</span> File Explorer</button>
+      <button class="nav-item" data-page="impact"><span class="nav-icon">◇</span> Impact Studio</button>
+      <button class="nav-item" data-page="insights"><span class="nav-icon">◈</span> Dependency Insights</button>
+      <button class="nav-item" data-page="history"><span class="nav-icon">◷</span> Snapshot History</button>
+      <button class="nav-item" data-page="audit"><span class="nav-icon">☷</span> Audit & Recovery</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sidebar-insight"><span class="insight-pulse"></span><div><strong>Analysis engine online</strong><small>Static dependency scanner</small></div></div>
+      <div class="sidebar-build"><span>OS RESEARCH UTILITY</span><span>v1.1.0</span></div>
+    </div>
+  </aside>
+  <div class="app-main">
+    <header class="topbar">
+      <div class="breadcrumbs">ENGINE <span>/</span> <b id="crumb">OVERVIEW</b></div>
+      <div class="topbar-right"><span class="security-dot"></span><span id="mode-label">MANAGED SANDBOX</span><span class="top-separator"></span><span class="clock" id="clock">LOCAL MODE</span></div>
+    </header>
+    <main class="main-content">
+      <div class="page-intro">
+        <div><div class="eyebrow">PREDICTIVE FILE-SYSTEM ANALYSIS <span> / 01</span></div><h1 id="page-title">System Overview<span class="title-period">.</span></h1><p id="page-description">Understand what depends on what — before a file operation changes your system.</p></div>
+        <button class="button button-secondary" id="scan-quick"><span class="button-icon">⟳</span> Rescan</button>
+      </div>
+      <div class="workspace-toolbar">
+        <div class="workspace-folder-icon">⌁</div>
+        <div class="workspace-path"><label for="workspace-input">ACTIVE FILE-SYSTEM ROOT</label><input id="workspace-input" type="text" spellcheck="false" aria-label="Folder to scan"></div>
+        <button class="button button-primary" id="scan-button">Scan workspace <span>↗</span></button>
+        <button class="button button-outline" id="demo-button" title="Switch to or restore the provided safe demo">Demo reset</button>
+      </div>
+      <div id="content"><div class="loading"><div class="spinner"></div> Mapping dependencies...</div></div>
+      <footer class="footer">INODEIMPACT ENGINE <span>·</span> INODE METADATA + DEPENDENCY GRAPH + PRE-FLIGHT SIMULATION <span>·</span> LOCAL-FIRST / NO CLOUD</footer>
+    </main>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

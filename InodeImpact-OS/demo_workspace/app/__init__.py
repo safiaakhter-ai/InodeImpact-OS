@@ -1,0 +1,1 @@
+"""Internal sample application package."""
